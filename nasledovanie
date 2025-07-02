@@ -1,0 +1,36 @@
+class Examination:
+    def __init__(self, Osmotr, Diagnoz, Lechenie):
+        self._Osmotr = Osmotr
+        self._Diagnoz = Diagnoz
+        self._Lechenie = Lechenie
+
+    def displey_info(self):
+        print(f"Osmotr:{self._Osmotr} Diagnoz: {self._Diagnoz} Lechenie: {self._Lechenie}")
+
+class Cats(Examination):
+    def __init__(self, Name, Osmotr, Diagnoz, Lechenie):
+        super().__init__(Osmotr,Diagnoz,Lechenie)
+        self._name = Name
+    def displey_info(self):
+        print(f"Osmotr: {self._Osmotr} Diagnoz: {self._Diagnoz} Lechenie: {self._Lechenie} Name: {self._name}")
+KitKat = Cats("Kit Kat,", "22:00,", "Bad,", "Now,")
+
+class Dogs(Examination):
+    def __init__(self, Name, Osmotr, Diagnoz, Lechenie):
+        super().__init__(Osmotr,Diagnoz,Lechenie)
+        self._name = Name
+    def displey_info(self):
+        print(f"Osmotr: {self._Osmotr} Diagnoz: {self._Diagnoz} Lechenie: {self._Lechenie} Name: {self._name}")
+Bobik = Dogs("Bobik,", "13:00,", "Good,", "None,")
+
+class squrrel(Examination):
+    def __init__(self, Name, Osmotr, Diagnoz, Lechenie):
+        super().__init__(Osmotr,Diagnoz,Lechenie)
+        self._name = Name
+    def displey_info(self):
+        print(f"Osmotr: {self._Osmotr} Diagnoz: {self._Diagnoz} Lechenie: {self._Lechenie} Name: {self._name}")
+Belka = squrrel("Belka,", "8:00,", "Normal,", "None,")
+
+KitKat.displey_info()
+Bobik.displey_info()
+Belka.displey_info()
