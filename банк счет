@@ -1,0 +1,13 @@
+class BankAccount:
+    total_account = 0
+    def __init__(self, account_schet, account_id):
+        self._account_schet = account_schet
+        self._account_id = account_id
+        BankAccount.total_account =+ 1
+        account_id = BankAccount.total_account
+        account_schet = BankAccount.total_account
+
+
+    @staticmethod
+    def get_total_accounts():
+         return BankAccount.total_account
