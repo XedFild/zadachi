@@ -1,0 +1,13 @@
+#Задача на метод str (класса object)
+
+# class Person:
+#     def __init__(str, Name, Age):
+#         str._Name = Name
+#         str._Age = Age
+#
+#     def __str__(self):
+#         return f"Name: {self._Name} Age: {self._Age}"
+#
+# tom = Person ("Tom", 34)
+#
+# print(tom)
