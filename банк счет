@@ -11,3 +11,17 @@ class BankAccount:
     @staticmethod
     def get_total_accounts():
          return BankAccount.total_account
+
+ bob = BankAccount ( 0 )
+ print("Bob account")
+ print("Total accounts")
+ print(BankAccount.get_total_accounts())
+ print("Bob account id")
+ print(bob.account_id)
+
+ tom = BankAccount ( 1 )
+ print("Tom account")
+ print("Total accounts")
+ print(BankAccount.get_total_accounts())
+ print("Tom account id")
+ print(tom.account_id)
